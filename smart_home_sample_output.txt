@@ -332,7 +332,7 @@ Command ID 23 is executed.
 
 Controlling the devices based on ID:
 
-Command ID 24 request is intiated.
+Command ID 24 request is initiated.
 
 Temperature Change FAILED. Invalid temperature value received
 

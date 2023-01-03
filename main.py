@@ -109,14 +109,14 @@ print("\n******************* GETTING THE STATUS BY DEVICE_TYPE *****************
 
 print("\nStatus based on: LIGHT DEVICE TYPE ")
 print("\nCommand ID " + str(cmd) + " request is intiated.")
-status = edge_server_1.get_status(cmd, 'device_type', 'light' )
+status = edge_server_1.get_status(cmd, 'device_type', 'light')
 time.sleep(WAIT_TIME)  
 print("\nCommand ID " + str(status) + " is executed.")
 cmd += 1
 
 print("\nStatus based on: AC DEVICE TYPE")
 print("\nCommand ID " + str(cmd) + " request is intiated.")
-status = edge_server_1.get_status(cmd, 'device_type', 'ac' )
+status = edge_server_1.get_status(cmd, 'device_type', 'ac')
 time.sleep(WAIT_TIME)  
 print("\nCommand ID " + str(status) + " is executed.")
 cmd += 1
@@ -202,21 +202,24 @@ print("\n******************* SETTING UP THE STATUS AND CONTROLLING BY ROOM *****
 
 
 print("\nControlling the devices based on room: ")
-print("\nCommand ID " + str(cmd) + " request is intiated.")
+print("\nCommand ID " + str(cmd) + " request is initiated.")
 status = edge_server_1.set_status(cmd, 'room', 'Living', 30)
 time.sleep(WAIT_TIME)  
 print("\nCommand ID " + str(status) + " is executed.")
 cmd += 1
 
 print("\nControlling the devices based on room: ")
-print("\nCommand ID " + str(cmd) + " request is intiated.")
+print("\nCommand ID " + str(cmd) + " request is initiated.")
 status = edge_server_1.set_status(cmd, 'all', 'all', 28)
 time.sleep(WAIT_TIME)  
 print("\nCommand ID " + str(status) + " is executed.")
 cmd += 1
 
+
+print("succeded")
+
 print("\nControlling the devices based on room: ")
-print("\nCommand ID " + str(cmd) + " request is intiated.")
+print("\nCommand ID " + str(cmd) + " request is initiated.")
 status = edge_server_1.set_status(cmd, 'room', 'Living', 'HIGH')
 time.sleep(WAIT_TIME)  
 print("\nCommand ID " + str(status) + " is executed.")
@@ -225,22 +228,22 @@ cmd += 1
 print("\n******************* SETTING UP THE STATUS AND CONTROLLING FOR INVALID REQUESTS *******************")
 
 print("\nControlling the devices based on room: ")
-print("\nCommand ID " + str(cmd) + " request is intiated.")
+print("\nCommand ID " + str(cmd) + " request is initiated.")
 status = edge_server_1.set_status(cmd, 'all', 'all', 38)
 time.sleep(WAIT_TIME)  
 print("\nCommand ID " + str(status) + " is executed.")
 cmd += 1
 
 print("\nControlling the devices based on ID: ")
-print("\nCommand ID " + str(cmd) + " request is intiated.")
+print("\nCommand ID " + str(cmd) + " request is initiated.")
 status = edge_server_1.set_status(cmd, 'single', 'ac_1', 39)
 time.sleep(WAIT_TIME)  
 print("\nCommand ID " + str(status) + " is executed.")
 cmd += 1
 
 print("\nControlling the devices based on ID: ")
-print("\nCommand ID " + str(cmd) + " request is intiated.")
-status = edge_server_1.set_status(cmd, 'single', 'light_4', 'HIGHH')
+print("\nCommand ID " + str(cmd) + " request is initiated.")
+status = edge_server_1.set_status(cmd, 'single', 'light_4', 'HIGH')
 time.sleep(WAIT_TIME)  
 print("\nCommand ID " + str(status) + " is executed.")
 cmd += 1
